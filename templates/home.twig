@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>IntelliToggle Home</title>
-    <link href="/public/tailwind.css" rel="stylesheet">
+    <link href="/tailwind.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-sans">
-<div class="flex items-center justify-center h-screen">
-    <h1 class="text-5xl font-bold text-blue-600">Welcome to IntelliToggle!</h1>
-</div>
+<body class="bg-[gray] font-sans">
+<h1 class="text-[red] text-4xl font-bold">
+    Tailwind is working!
+</h1>
+
+<nav class="bg-[#42389E] py-10 px-30">
+    <div class="flex justify-between items-center self-stretch">
+
+        <div class="text-2xl font-bold text-white">
+            IntelliToggle
+        </div>
+
+        <div class="flex space-x-12 text-white text-lg">
+            <a href="#" class="hover:text-gray-200 transition">Home</a>
+            <a href="#" class="hover:text-gray-200 transition">About</a>
+            <a href="#" class="hover:text-gray-200 transition">Pricing</a>
+        </div>
+
+        <button class="bg-[#F9A71E] text-[#42389E] px-5 py-2 rounded-lg hover:bg-gray-100 transition">
+            Start Sandbox
+        </button>
+
+    </div>
+</nav>
+
+<section class="bg-[#42389E] flex flex-col md:flex-row items-center justify-center h-screen px-4 md:px-16">
+    <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="font-title font-bold leading-normal text-6xl text-white mb-4">
+            The First Dart-Native Feature Flag With DartCodeAI
+        </h1>
+        <p class="text-white mb-4 text-lg md:text-xl">
+            Feature flags built for Dart, ship faster, roll back safely,
+            and scale with AI-powered delivery
+        </p>
+        <button class="bg-[#F9A71E] text-[#42389E] px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
+            Get Started
+        </button>
+    </div>
+    <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+        <img src="/public/hero-placeholder.png" alt="Hero Image" class="w-3/4 md:w-full">
+    </div>
+</section>
+
 </body>
 </html>
-
