@@ -5,16 +5,13 @@
     <title>IntelliToggle Home</title>
     <link href="/tailwind.css" rel="stylesheet">
 </head>
-<body class="bg-[gray] font-sans">
-<h1 class="text-[red] text-4xl font-bold">
-    Tailwind is working!
-</h1>
+<body class="font-sans">
 
-<nav class="bg-[#42389E] py-10 px-30">
-    <div class="flex justify-between items-center self-stretch">
+<nav class="bg-[#42389E] py-[40px] px-[120px]">
+    <div class="flex justify-between items-center">
 
-        <div class="text-2xl font-bold text-white">
-            IntelliToggle
+        <div class="text-2xl font-bold text-white ">
+            <img src = "/images/logo.png" alt = "IntelliToggle Logo" >
         </div>
 
         <div class="flex space-x-12 text-white text-lg">
@@ -30,21 +27,44 @@
     </div>
 </nav>
 
-<section class="bg-[#42389E] flex flex-col md:flex-row items-center justify-center h-screen px-4 md:px-16">
-    <div class="md:w-1/2 text-center md:text-left">
-        <h1 class="font-title font-bold leading-normal text-6xl text-white mb-4">
-            The First Dart-Native Feature Flag With DartCodeAI
+<section class="bg-[#42389E] flex flex-col py-[150px] items-center justify-center h-screen px-4 md:px-16">
+    <div class="max-w-[800px] mx-auto text-center">
+        <h1 class="text-white font-title font-bold leading-normal text-[64px] mb-4">
+            The First <span class="text-[#42389E] bg-[#F9A71E] px-5 py-1 rounded-lg">Dart-Native</span> Feature Flag With DartCodeAI
         </h1>
-        <p class="text-white mb-4 text-lg md:text-xl">
+        <p class="text-white text-[32px] font-semibold leading-normal">
             Feature flags built for Dart, ship faster, roll back safely,
             and scale with AI-powered delivery
         </p>
-        <button class="bg-[#F9A71E] text-[#42389E] px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
-            Get Started
-        </button>
+        <p class="text-[#F9A71E] text-[32px] font-semibold leading-normal">
+            Starting at just $1/month
+        </p>
+
+        <div class="space-x-6 py-[41]">
+            <button class="bg-[#F9A71E] text-[#42389E] px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
+                Get Started
+            </button>
+            <button class="bg-[#42389E] text-[#F9A71E] px-6 py-3 border border-[#F9A71E] rounded-lg hover:bg-purple-900 transition">
+                Join AI Early Access
+            </button>
+        </div>
     </div>
-    <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-        <img src="/public/hero-placeholder.png" alt="Hero Image" class="w-3/4 md:w-full">
+    <div class="md:w-1/2 mt-15 md:mt-10 flex justify-center">
+        <img src="/images/display.png" alt="Hero Image" class="w-3/4 md:w-full">
+    </div>
+</section>
+<section>
+    <div class="flex flex-col items-center p-[120] gap-[40px] self-stretch">
+        <p class="text-center">
+            Trusted by various engineering teams
+        </p>
+        <div class="flex space-x-8 text-white text-lg justify-center">
+            <img src = "/images/google_logo.png" alt = "Google Cloud Logo" class="w-[120] h-[60]">
+            <img src = "/images/amzn_logo.png" alt = "Amazon Web Services Logo" class="w-[120] h-[60]">
+            <img src = "/images/azure_logo.png" alt = "Microsoft Azure Logo" class="w-[120] h-[60]">
+            <img src = "/images/digital_ocean_logo.png" alt = "Digital Ocean Logo"class="w-[120] h-[60]">
+            <img src = "/images/ibm_logo.png" alt = "IBM Logo" >
+        </div>
     </div>
 </section>
 
