@@ -566,6 +566,10 @@ video {
   margin: 4rem;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -597,6 +601,14 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-8 {
@@ -671,10 +683,6 @@ video {
   width: 100%;
 }
 
-.min-w-0 {
-  min-width: 0px;
-}
-
 .min-w-\[900px\] {
   min-width: 900px;
 }
@@ -693,10 +701,6 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -735,14 +739,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -763,10 +759,6 @@ video {
 
 .overflow-x-auto {
   overflow-x: auto;
-}
-
-.whitespace-nowrap {
-  white-space: nowrap;
 }
 
 .rounded-lg {
@@ -899,11 +891,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-\[40px\] {
@@ -1093,32 +1080,9 @@ video {
   outline-offset: 2px;
 }
 
-.focus\:ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.focus\:ring-\[\#F9A71E\]:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(249 167 30 / var(--tw-ring-opacity, 1));
-}
-
 @media (min-width: 640px) {
-  .sm\:w-auto {
-    width: auto;
-  }
-
-  .sm\:min-w-\[250px\] {
-    min-width: 250px;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
-  }
-
-  .sm\:gap-0 {
-    gap: 0px;
   }
 
   .sm\:rounded-l-lg {
@@ -1176,10 +1140,6 @@ video {
     width: 120px;
   }
 
-  .md\:w-auto {
-    width: auto;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1214,11 +1174,6 @@ video {
     padding-right: 1.25rem;
   }
 
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .md\:px-\[120px\] {
     padding-left: 120px;
     padding-right: 120px;
@@ -1232,10 +1187,6 @@ video {
   .md\:py-\[150px\] {
     padding-top: 150px;
     padding-bottom: 150px;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-2xl {
@@ -1267,11 +1218,6 @@ video {
 @media (min-width: 1024px) {
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .lg\:text-2xl {

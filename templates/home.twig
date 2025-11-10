@@ -101,21 +101,21 @@
         </div>
     </div>
 </section>
-<section class="py-12 md:py-[120px] px-4 md:px-[120px] gap-8 md:gap-[40px] flex flex-row bg-[#EDECF6]">
+<section class="py-12 md:py-[120px] px-4 md:px-[120px] gap-8 md:gap-[40px] flex flex-col md:flex-row bg-[#EDECF6]">
     <div>
         <img src="/images/open_feature.png">
     </div>
     <div class="flex-col">
-        <h1 class="text-black font-bold">
+        <h1 class="text-black font-bold m-8">
             Seamless Feature Management with OpenFeature
         </h1>
-        <p>
+        <p class="gap-8">
             Aortem now integrates with OpenFeature to provide developers
             with a powerful, standardized approach to feature flagging and
             dynamic configuration. Ship features faster, test safely, and
             optimize user experiences effortlessly.
         </p>
-        <button class="bg-[#F9A71E] text-[#42389E] font-bold shadow-lg rounded-xl px-5 py-2 hover:bg-yellow-400">
+        <button class="bg-[#F9A71E] text-[#42389E] mt-10 font-bold shadow-lg rounded-xl px-5 py-2 hover:bg-yellow-400">
             Learn More ->
         </button>
     </div>
@@ -126,7 +126,7 @@
             Control & Power-focused
         </h1>
     </div>
-    <div class="flex flex-row gap-8 justify-center">
+    <div class="flex flex-col md:flex-row gap-8 justify-center">
 
         <div>
             <img src="/images/connect.png"
@@ -272,57 +272,106 @@
     <h1 class="text-[#F9A71E] font-bold text-center">
         Enterprise Only
     </h1>
-    <div class="flex flex-col md:flex-row items-center justify-between border border-white px-4 md:px-8 lg:px-16 py-6 gap-4">
-        <div class="text-left flex-shrink-0 w-full md:w-auto">
-            <h2 class="text-white font-bold text-lg md:text-xl lg:text-2xl">
+
+
+
+    <div class="flex flex-col border border-white p-8 rounded-lg  md:flex-row justify-between items-center md:items-start gap-6">
+
+        <div class="text-left mr-8">
+            <h1 class="font-bold bg-[#42389E] text-white sm:text-lg md:text-xl lg:text-2xl text-center">
                 <span class="text-[#F9A71E] font-bold">Be The First</span> To Try Our New AI Features
-            </h2>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-            <input type="email" placeholder="Enter your email" class="px-4 py-3 rounded-lg border border-white focus:outline-none focus:ring-2 focus:ring-[#F9A71E] w-full sm:min-w-[250px]">
-            <button type="submit" class="bg-[#F9A71E] text-[#42389E] px-6 py-3 rounded-lg hover:bg-yellow-400 transition w-full sm:w-auto whitespace-nowrap">
+            </h1>
+         </div>
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+            <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none">
+            <button class="bg-[#F9A71E] text-[#42389E] px-5 py-2 rounded-lg sm:rounded-r-lg sm:rounded-l-none hover:bg-yellow-400 transition">
                 Join AI Early Access
             </button>
         </div>
+
     </div>
 </section>
-<section class="bg-[#EDECF6]">
+<section class="bg-[#EDECF6] p-10">
     <div class="text-center">
-        <h1 class="text-[#42389E] sm:text-lg md:text:xl lg:text-2xl font-bold pt-10">
+        <h1 class="text-[#42389E] text-lg md:text-xl lg:text-2xl font-bold pt-10">
             Plans Built For Every Stage of Growth
         </h1>
 
-        <div class="w-1/3 h-1/3 justify-center mx-auto mt-8 mb-8 p-6 gap-8 rounded-lg flex bg-gradient-to-b from-[#42389E] to-[#0F1026] text-white">
-            <p class="text-center">
+        <div class="w-full max-w-md mx-auto mt-8 mb-8 p-6 rounded-lg flex bg-gradient-to-b from-[#42389E] to-[#0F1026] text-white">
+            <p class="text-center w-full">
                 <span class="font-bold">Prices start at</span><br>
                 <span class="font-bold text-xl">$10 </span>/month
             </p>
         </div>
 
-        <button class="bg-[#F9A71E] text-[#42389E] font-bold shadow-lg rounded-xl mb-10 px-5 py-2 hover:bg-yellow-400">
+        <button class="bg-[#F9A71E] text-[#42389E] font-bold shadow-lg rounded-xl mb-10 px-5 py-2 hover:bg-yellow-400 transition">
             View Subscription Details
         </button>
-        <div class="border border-gray-900 rounded-lg p-8 flex flex-row justify-between">
-            <div class="text-left">
-                <h1 class="font-bold text-[#42389E] sm:text-lg md:text:xl lg:text-2xl text-center">
+
+        <div class="border border-gray-900 rounded-lg p-8 mx-4 md:mx-16 my-8 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+            <div class="text-center md:text-left w-full md:w-auto">
+                <h1 class="font-bold text-[#42389E] text-lg md:text-xl lg:text-2xl mb-2">
                     Start Your 7-Day Free Sandbox Plan
                 </h1>
-                <p class="text-center">
+                <p>
                     Join over 1,000+ startups already growing with Untitled.
                 </p>
             </div>
-            <div class="text-right">
-                <button class="bg-[#F9A71E] text-[#42389E] font-bold shadow-lg rounded-xl px-5 py-2 hover:bg-yellow-400">
+            <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                <button class="bg-[#F9A71E] text-[#42389E] text-base md:text-lg font-bold shadow-lg rounded-xl px-5 py-2 hover:bg-yellow-400 transition whitespace-nowrap">
                     Get Started
                 </button>
-                <button class="text-[#F9A71E] sm:text-md md:text:lg lg:text-xl px-5 py-2 border border-[#F9A71E] rounded-lg hover:bg-[#42389E] transition">
+                <button class="text-[#F9A71E] text-base md:text-lg px-5 py-2 border border-[#F9A71E] rounded-lg hover:bg-[#42389E] transition whitespace-nowrap">
                     Learn More
                 </button>
-
             </div>
         </div>
     </div>
+</section>
+<section>
+    <div>
+        <h1 class="text-[#42389E] text-center font-bold sm:text-lg md:text-xl lg:text-2xl pt-32">
+            Why Teams Use IntelliToggle
+        </h1>
 
+        <div class="flex flex-row gap-8 justify-center pt-28 m-10">
+
+            <div>
+                <img src="/images/rollouts.png"
+                     class="mx-auto mb-2 object-contain w-32 h-auto">
+                <h1 class="font-bold">Safer, faster rollouts</h1>
+                <p>Control feature releases in minutes, not weeks
+                    without risking production stability.</p>
+            </div>
+
+            <div>
+                <img src="/images/ship_confidence.png"
+                     class="mx-auto mb-2 object-contain w-32 h-auto">
+                <h1 class="font-bold">Confidence to ship</h1>
+                <p>Flip, target, and roll back. Engineers ship more often knowing they can undo mistakes.</p>
+            </div>
+
+            <div>
+                <img src="/images/AI_delivery.png"
+                     class="mx-auto mb-2 object-contain w-32 h-auto">
+                <h1 class="font-bold">Future-ready with AI delivery</h1>
+                <p>Built for Dart workflows and already prepared
+                    for AI-powered rollout automation tomorrow.</p>
+            </div>
+        </div>
+    </div>
+    <div class=" bg-[#EDECF6] border border-gray-900 rounded-lg p-8 flex flex-row justify-between m-14">
+        <div class="text-left">
+            <h1 class="font-bold text-[#42389E] sm:text-lg md:text-xl lg:text-2xl text-center">
+                Read a 2-min case note: <span class="text-gray-600 font-normal">How a sample Flutter app shipped faster with IntelliToggle</span>
+            </h1>
+        </div>
+        <div class="text-right">
+            <button class="bg-[#F9A71E] text-[#42389E] font-bold shadow-lg rounded-xl px-5 py-2 hover:bg-yellow-400">
+               Read Now
+            </button>
+        </div>
+    </div>
 </section>
 </body>
 </html>
