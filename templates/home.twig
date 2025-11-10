@@ -14,18 +14,23 @@
             <img src="/images/logo.png" alt="IntelliToggle Logo" class="h-8">
         </div>
 
+
         <div class="hidden md:flex space-x-12 text-white text-lg">
             <a href="#" class="hover:text-gray-200 transition">Home</a>
             <a href="#" class="hover:text-gray-200 transition">About</a>
             <a href="#" class="hover:text-gray-200 transition">Pricing</a>
         </div>
 
+
         <button class="bg-[#F9A71E] text-[#42389E] px-5 py-2 rounded-lg hover:bg-gray-100 transition text-sm md:text-base">
             Start Sandbox
         </button>
 
+
+
     </div>
 </nav>
+
 
 <section class="bg-[#42389E] flex flex-col py-[80px] md:py-[150px] items-center justify-center min-h-screen px-4 md:px-16">
     <div class="max-w-[800px] mx-auto text-center mb-8 md:mb-12">
@@ -71,15 +76,15 @@
 </section>
 <section class="py-12 md:py-[120px] px-4 md:px-[120px] flex flex-col gap-8 md:gap-[40px]">
     <div>
-        <h1 class="text-[#42389E] font-bold text-center text-lg md:text-lg mb-8">
+        <h1 class="text-[#42389E] hidden font-bold text-center text-lg md:text-lg mb-8">
             What is IntelliToggle?
         </h1>
     </div>
-    <div class="flex flex-row h-auto">
+    <div class="flex flex-col md:flex-row h-auto">
         <div>
-            <h2 class="text-black font-bold"> Your AI Dart App's Control Panel For Feature Releases</h2>
-            <p class="text-gray-500">
-                IntelliToggle is a “Dart-Powered” feature flag that lets you turn features on/off instantly in your application without redeploying code. It allows you control roll-outs, run experiments, and fix bugs faster.
+            <h1 class="text-[#42389E] text-lg md:text-lg lg:text-xl font-bold mb-4  "> Your AI Dart App's Control Panel For Feature Releases</h1>
+            <p class="text-gray-500 mb-4">
+                IntelliToggle is a “Dart-Powered” feature flag that lets you turn features on/off instantly in your application without redeploying code. It allows you to control roll-outs, run experiments, and fix bugs faster.
             </p>
             <h2 class="text-black font-bold">
                 Benefits
@@ -101,25 +106,28 @@
         </div>
     </div>
 </section>
-<section class="py-12 md:py-[120px] px-4 md:px-[120px] gap-8 md:gap-[40px] flex flex-col md:flex-row bg-[#EDECF6]">
-    <div>
-        <img src="/images/open_feature.png">
+<section class="py-12 md:py-[120px] px-4 md:px-[120px] gap-8 md:gap-[40px] flex flex-col md:flex-row items-center md:items-start bg-[#EDECF6]">
+
+    <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+        <img src="/images/open_feature.png" class="max-w-full h-auto">
     </div>
-    <div class="flex-col">
-        <h1 class="text-black font-bold m-8">
+
+    <div class="w-full md:w-1/2 flex flex-col gap-6 md:gap-8">
+        <h1 class="text-black font-bold text-2xl md:text-4xl">
             Seamless Feature Management with OpenFeature
         </h1>
-        <p class="gap-8">
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed">
             Aortem now integrates with OpenFeature to provide developers
             with a powerful, standardized approach to feature flagging and
             dynamic configuration. Ship features faster, test safely, and
             optimize user experiences effortlessly.
         </p>
-        <button class="bg-[#F9A71E] text-[#42389E] mt-10 font-bold shadow-lg rounded-xl px-5 py-2 hover:bg-yellow-400">
-            Learn More ->
+        <button class="bg-[#42389E] text-white md:bg-[#F9A71E] md:text-[#42389E] mt-6 font-bold shadow-lg rounded-xl px-5 py-2 hover:bg-yellow-400 w-max">
+            Learn More &rarr;
         </button>
     </div>
 </section>
+
 <section class="flex flex-col py-[40px] px-4 md:px-[120px]">
     <div>
         <h1 class="font-bold text-center text-lg md:text-xl lg:text-2xl mb-8 mt-8">
@@ -269,7 +277,7 @@
             </p>
         </div>
     </div>
-    <h1 class="text-[#F9A71E] font-bold text-center">
+    <h1 class="text-[#F9A71E] hidden font-bold text-center">
         Enterprise Only
     </h1>
 
@@ -373,5 +381,6 @@
         </div>
     </div>
 </section>
+
 </body>
 </html>
