@@ -8,29 +8,21 @@
 <body class="font-sans">
 
 <nav class="bg-[#42389E] py-10 px-4 md:px-32">
-    <div class="hidden md:block bg-green-500 text-white p-4">
-        DESKTOP VIEW
-    </div>
-    <div class="block md:hidden bg-red-500 text-white p-4">
-        MOBILE VIEW
-    </div>
     <div class="flex justify-between items-center">
 
         <div class="text-white font-bold text-2xl">
             <img src="/images/logo.png" alt="IntelliToggle Logo" class="h-8">
         </div>
 
-
-        <div class="hidden md:flex items-center space-x-12">
+        <div class="hidden md:flex flex-1 justify-center space-x-12">
             <a href="#" class="text-white text-lg hover:text-gray-200 transition">Home</a>
             <a href="#" class="text-white text-lg hover:text-gray-200 transition">About</a>
             <a href="#" class="text-white text-lg hover:text-gray-200 transition">Pricing</a>
-
-            <button class="bg-[#F9A71E] text-[#42389E] px-5 py-2 rounded-lg hover:bg-yellow-400 transition">
-                Start Sandbox
-            </button>
         </div>
 
+        <button class="hidden md:block bg-[#F9A71E] text-[#42389E] px-5 py-2 rounded-lg hover:bg-yellow-400 transition">
+            Start Sandbox
+        </button>
 
         <button id="menu-toggle" class="md:hidden block p-2 text-white focus:outline-none">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,8 +32,7 @@
         </button>
     </div>
 
-
-    <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col space-y-4">
+    <div id="mobile-menu" class="hidden md:hidden mt-4 flex ml-4 flex-col space-y-4">
         <a href="#" class="text-white hover:text-gray-200 py-2">Home</a>
         <a href="#" class="text-white hover:text-gray-200 py-2">About</a>
         <a href="#" class="text-white hover:text-gray-200 py-2">Pricing</a>
@@ -50,6 +41,7 @@
         </button>
     </div>
 </nav>
+
 
 <script>
     const menuToggle = document.getElementById('menu-toggle');
@@ -60,20 +52,19 @@
     });
 </script>
 
-<section class="bg-[#42389E] flex flex-col py-[80px] md:py-[150px] items-center justify-center min-h-screen px-4 md:px-16">
-    <div class="max-w-[800px] mx-auto text-center mb-8 md:mb-12">
+<section class="bg-[#42389E] flex flex-col items-center justify-center px-4 md:px-16 py-12 md:py-24">
+    <div class="max-w-[800px] text-center mb-8 md:mb-12">
         <h1 class="text-white font-bold leading-tight text-3xl md:text-5xl lg:text-[64px] mb-4 md:mb-6">
             The First <span class="text-[#42389E] bg-[#F9A71E] px-3 md:px-5 py-1 rounded-lg inline-block">Dart-Native</span> Feature Flag With DartCodeAI
         </h1>
         <p class="text-white text-lg md:text-2xl lg:text-[32px] font-semibold leading-normal mb-3">
-            Feature flags built for Dart, ship faster, roll back safely,
-            and scale with AI-powered delivery
+            Feature flags built for Dart, ship faster, roll back safely, and scale with AI-powered delivery
         </p>
         <p class="text-[#F9A71E] text-lg md:text-2xl lg:text-[32px] font-semibold leading-normal mb-6 md:mb-8">
             Starting at just $1/month
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center py-[41px]">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center py-6">
             <button class="bg-[#F9A71E] text-[#42389E] px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
                 Get Started
             </button>
@@ -83,58 +74,47 @@
         </div>
     </div>
 
-    <div class="w-full md:w-2/3 lg:w-1/2 flex justify-center">
-        <img src="/images/dashboard.png" alt="Hero Image" class="w-full max-w-md">
+    <div class="w-full flex justify-center">
+        <img src="/images/dashboard.png" alt="Hero Image" class="w-full">
     </div>
 </section>
 
-<section class="py-12 md:py-[120px] px-4 md:px-[120px] flex flex-col gap-8 md:gap-[40px]">
-    <div class="items-center">
-        <p class="text-center text-lg md:text-xl mb-8">
-            Trusted by various engineering teams
+
+<section class="px-4 md:px-16 py-8 md:py-20">
+    <p class="text-center text-lg md:text-xl mb-6 md:mb-8">
+        Trusted by various engineering teams
+    </p>
+    <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+        <img src="/images/google_logo.png" alt="Google Cloud Logo" class="w-[80px] md:w-[120px] h-auto">
+        <img src="/images/amzn_logo.png" alt="Amazon Web Services Logo" class="w-[80px] md:w-[120px] h-auto">
+        <img src="/images/azure_logo.png" alt="Microsoft Azure Logo" class="w-[80px] md:w-[120px] h-auto">
+        <img src="/images/digital_ocean_logo.png" alt="Digital Ocean Logo" class="w-[80px] md:w-[120px] h-auto">
+        <img src="/images/ibm_logo.png" alt="IBM Logo" class="w-[80px] md:w-[120px] h-auto">
+    </div>
+</section>
+
+
+<section class="px-4 md:px-16 py-8 md:py-20 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+    <div class="md:w-1/2">
+        <h2 class="text-[#42389E] font-bold text-2xl md:text-3xl mb-4">
+            Your AI Dart App's Control Panel For Feature Releases
+        </h2>
+        <p class="text-gray-500 mb-4">
+            IntelliToggle is a “Dart-Powered” feature flag that lets you turn features on/off instantly in your application without redeploying code. It allows you to control roll-outs, run experiments, and fix bugs faster.
         </p>
-        <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-            <img src="/images/google_logo.png" alt="Google Cloud Logo" class="w-[80px] md:w-[120px] h-auto">
-            <img src="/images/amzn_logo.png" alt="Amazon Web Services Logo" class="w-[80px] md:w-[120px] h-auto">
-            <img src="/images/azure_logo.png" alt="Microsoft Azure Logo" class="w-[80px] md:w-[120px] h-auto">
-            <img src="/images/digital_ocean_logo.png" alt="Digital Ocean Logo" class="w-[80px] md:w-[120px] h-auto">
-            <img src="/images/ibm_logo.png" alt="IBM Logo" class="w-[80px] md:w-[120px] h-auto">
-        </div>
+        <h3 class="text-black font-bold mb-2">Benefits</h3>
+        <ul class="list-disc pl-6 text-gray-500">
+            <li>Toggle new features without app updates</li>
+            <li>Roll out specific users or regions</li>
+            <li>Instantly rollback when needed</li>
+        </ul>
+    </div>
+    <div class="md:w-1/2 flex justify-center md:justify-end">
+        <img src="/images/profile.png" alt="IntelliToggle Panel" class="w-full max-w-fit h-auto">
     </div>
 </section>
-<section class="py-12 md:py-[120px] px-4 md:px-[120px] flex flex-col gap-8 md:gap-[40px]">
-    <div>
-        <h1 class="text-[#42389E] hidden font-bold text-center text-lg md:text-lg mb-8">
-            What is IntelliToggle?
-        </h1>
-    </div>
-    <div class="flex flex-col md:flex-row h-auto">
-        <div>
-            <h1 class="text-[#42389E] text-lg md:text-lg lg:text-xl font-bold mb-4  "> Your AI Dart App's Control Panel For Feature Releases</h1>
-            <p class="text-gray-500 mb-4">
-                IntelliToggle is a “Dart-Powered” feature flag that lets you turn features on/off instantly in your application without redeploying code. It allows you to control roll-outs, run experiments, and fix bugs faster.
-            </p>
-            <h2 class="text-black font-bold">
-                Benefits
-            </h2>
-            <ul class="list-disc pl-6 text-gray-500">
-                <li>
-                    Toggle new features without app updates
-                </li>
-                <li>
-                    Roll out specific users or regions
-                </li>
-                <li>
-                    Instantly rollback when needed
-                </li>
-            </ul>
-        </div>
-        <div>
-            <img src="/images/profile.png">
-        </div>
-    </div>
-</section>
-<section class="py-12 md:py-[120px] px-4 md:px-[120px] gap-8 md:gap-[40px] flex flex-col md:flex-row items-center md:items-start bg-[#EDECF6]">
+
+<section class="bg-white md:bg-[#EDECF6] py-12 md:py-[120px] px-4 md:px-[120px] gap-8 md:gap-[40px] flex flex-col md:flex-row items-center md:items-start ">
 
     <div class="w-full md:w-1/2 flex justify-center md:justify-start">
         <img src="/images/open_feature.png" class="max-w-full h-auto">
@@ -162,11 +142,11 @@
             Control & Power-focused
         </h1>
     </div>
-    <div class="flex flex-col md:flex-row gap-8 justify-center">
+    <div class="flex flex-col md:flex-row gap-8 justify-center mx-auto mb-2 ">
 
         <div>
             <img src="/images/connect.png"
-                 class="mx-auto mb-2 object-contain w-[370px] h-auto">
+                 class="object-contain w-[370px] h-auto p-4 rounded-lg bg-gradient-to-b from-[#42389E] to-[#0F1026]">
             <h1 class="font-bold">Connect</h1>
             <p>Install SDK in your Dart project in 2 mins.</p>
             <div class="text-[#F9A71E] text-center px-5 py-2 border border-[#F9A71E] rounded-lg hover:bg-[#42389E] transition inline-block">
@@ -176,7 +156,7 @@
 
         <div>
             <img src="/images/create_flags.png"
-                 class="mx-auto mb-2 object-contain w-[370px] h-auto">
+                 class="object-contain w-[370px] h-auto p-4 rounded-lg bg-gradient-to-b from-[#42389E] to-[#0F1026]">
             <h1 class="font-bold">Create Flag</h1>
             <p>Define feature in intelliToggle dashboard.</p>
             <div class="text-[#F9A71E] text-center px-5 py-2 border border-[#F9A71E] rounded-lg hover:bg-[#42389E] transition inline-block">
@@ -186,7 +166,7 @@
 
         <div>
             <img src="/images/ship_control.png"
-                 class="mx-auto mb-2 object-contain w-[370px] h-auto">
+                 class="object-contain w-[370px] h-auto p-4 rounded-lg bg-gradient-to-b from-[#42389E] to-[#0F1026]">
             <h1 class="font-bold">Ship & Control</h1>
             <p>Slip switches anytime, see instant results.</p>
             <div class="text-[#F9A71E] text-center px-5 py-2 border border-[#F9A71E] rounded-lg hover:bg-[#42389E] transition inline-block">
@@ -198,13 +178,13 @@
 </section>
 <section class="flex-col py-[40px] px-4 md:px-[120px]">
     <div>
-        <h1 class="text-[#42389E] font-bold text-center text-lg md:text-xl lg:text-2xl mb-8 mt-8">
+        <h1 class="text-[#42389E] font-bold text-center text-xl md:text-2xl lg:text-3xl mb-8 mt-8">
             Dart-Powered Feature Flag
         </h1>
-        <h2 class="text-blue-950 font-bold text-center text-md md:text-lg lg:text-xl mb-2">
+        <h2 class="text-blue-950 font-bold text-left md:text-center text-md md:text-lg lg:text-xl mb-2">
             Not Another Generic Feature Flag Tool
         </h2>
-        <p class="text-gray-500 text-center text-sm md:text-md lg:text-lg mb-4">
+        <p class="text-gray-500 text-left md:text-center text-sm md:text-md lg:text-lg mb-4">
             Most tools are built for every language, which means extra layers and slower toggles.
             IntelliToggle is built in Dart, for Dart — so it’s faster, safer, and built for your stack.
         </p>
@@ -252,54 +232,54 @@
 </section>
 <section class="bg-[#42389E] py-12 md:py-[120px] px-4 md:px-[120px] flex flex-col gap-8 md:gap-[40px]">
     <div class="text-center">
-        <span class="bg-[#F9A71E] text-[#42389E] rounded-lg px-4 py-2 font-bold">
+        <span class="bg-[#F9A71E] text-[#42389E] rounded-3xl px-8 py-3 font-bold">
             Coming Soon
         </span>
-        <h1 class="text-white font-bold text-center text-lg md:text-xl lg:text-2xl mb-8 mt-8">
+        <h1 class="text-white font-bold text-center text-3xl md:text-4xl lg:text-5xl mb-8 mt-8">
             DartCodeAI That Actually Changes Flagging
         </h1>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
 
-        <div class="flex flex-col items-center text-center bg-gray-50 p-8 rounded-lg shadow-md border-2 border-gray-200">
+        <div class="flex flex-col items-center text-white text-center bg-[#42389E] p-8 rounded-lg shadow-md border-2 border-gray-200">
             <img src="/images/auto_flag.png" class="w-24 h-24 object-contain mb-6">
             <h2 class="font-bold text-xl mb-3">
                 AutoFlag AI (LLM-Assisted Flag Creation)
             </h2>
-            <p class="text-gray-600 mb-6 flex-grow">
+            <p class="text-white mb-6 flex-grow">
                 Create new flags just by typing what you need. The AI names it, sets
                 rules, and configures targeting for you.
             </p>
         </div>
 
-        <div class="flex flex-col items-center text-center bg-gray-50 p-8 rounded-lg shadow-md border-2 border-gray-200">
+        <div class="flex flex-col items-center text-white text-center bg-[#42389E] p-8 rounded-lg shadow-md border-2 border-gray-200">
             <img src="/images/smart_ramp.png" class="w-24 h-24 object-contain mb-6">
             <h2 class="font-bold text-xl mb-3">
                 SmartRamp AI (AI-Driven Rollout Optimization)
             </h2>
-            <p class="text-gray-600 mb-6 flex-grow">
+            <p class="text-white mb-6 flex-grow">
                 Rollouts that adjust themselves. AI expands, pauses, or rolls
                 back based on real-time metrics.
             </p>
         </div>
 
-        <div class="flex flex-col items-center text-center bg-gray-50 p-8 rounded-lg shadow-md border-2 border-gray-200">
+        <div class="flex flex-col items-center text-white text-center bg-[#42389E] p-8 rounded-lg shadow-md border-2 border-gray-200">
             <img src="/images/explain_flags.png" class="w-24 h-24 object-contain mb-6">
             <h2 class="font-bold text-xl mb-3">
                 ExplainFlags AI (LLM Root-Cause + Insights)
             </h2>
-            <p class="text-gray-600 mb-6 flex-grow">
+            <p class="text-white mb-6 flex-grow">
                 Understand issues instantly with AI-generated, plain-language insights
                 tied to your flags.
             </p>
         </div>
 
-        <div class="flex flex-col items-center text-center bg-gray-50 p-8 rounded-lg shadow-md border-2 border-gray-200">
+        <div class="flex flex-col items-center text-white text-center bg-[#42389E] p-8 rounded-lg shadow-md border-2 border-gray-200">
             <img src="/images/auto_segment.png" class="w-24 h-24 object-contain mb-6">
             <h2 class="font-bold text-xl mb-3">
                 AutoSegment AI (Behavioral Segmentation)
             </h2>
-            <p class="text-gray-600 mb-6 flex-grow">
+            <p class="text-white mb-6 flex-grow">
                 Target the right users automatically. AI builds segments from live
                 behavior—no manual rules.
             </p>
@@ -364,6 +344,7 @@
         </div>
     </div>
 </section>
+
 <section class="hidden md:block">
     <div>
         <h1 class="text-[#42389E] text-center font-bold sm:text-lg md:text-xl lg:text-2xl pt-32">
@@ -408,6 +389,26 @@
             </button>
         </div>
     </div>
+</section>
+
+<section class="block md:hidden flex-col gap-4 justify-center py-[41px] m-8 p-10">
+    <div class="bg-gradient-to-b from-[#42389E] to-[#0F1026] p-10 rounded-3xl">
+        <h1 class="text-white text-center mt-4 text-xl md:text-2xl lg:text-3xl">
+            Launch Features Confidently With AI Driven Feature Flags
+        </h1>
+        <p class="text-white text-center mt-4 text-lg md:text-xl lg:text-2xl">
+            Start for free, scale as your team grows
+        </p>
+        <div class="flex flex-col gap-4 justify-center py-[41px]">
+            <button class="bg-[#F9A71E] text-[#42389E] font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
+                Get Started
+            </button>
+            <button class="text-[#F9A71E] px-6 py-3 border border-[#F9A71E] rounded-lg hover:bg-purple-900 transition">
+                Join AI Early Access
+            </button>
+        </div>
+    </div>
+
 </section>
 
 <footer class="bg-[#EDECF6] p-10">
