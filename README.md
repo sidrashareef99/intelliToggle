@@ -17,7 +17,7 @@ A recreation of a Figma design for a home page built with Twig and TailwindCSS.
 
 1. Clone repository:
     ```bash
-   git clone https://github.com/sidrashareef99/intelliToggle
+   git clone https://github.com/sidrashareef99/intelliToggle.git
    ```
 2. Navigate to project directory: 
     ```bash
